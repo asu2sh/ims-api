@@ -5,6 +5,7 @@ from .models import Item
 from .serializers import ItemSerializer, RegisterSerializer
 
 from rest_framework import status
+from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -13,6 +14,8 @@ logger = logging.getLogger(__name__)
 
 
 class RegisterView(APIView):
+    permission_classes = [AllowAny]
+    
     def post(self, request):
         serializer = RegisterSerializer(data=request.data)
         if serializer.is_valid():
