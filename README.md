@@ -120,8 +120,8 @@ The system uses Redis to cache frequently accessed inventory items, optimizing p
 
 ### Authentication
 
-**User Registration**
 - **POST** /auth/register/
+  - Register User
   - **Body**:
     ```json
     {
@@ -129,9 +129,9 @@ The system uses Redis to cache frequently accessed inventory items, optimizing p
       "password": "yourpassword"
     }
     ```
-
-**Token Obtain**
+    
 - **POST** /auth/login/
+  - Generate JWT
   - **Body**:
   ```json
     {
@@ -139,9 +139,9 @@ The system uses Redis to cache frequently accessed inventory items, optimizing p
       "password": "yourpassword"
     }
   ```
-    
-**Token Refresh**
+  
 - **POST** /auth/token/refresh/
+  - Refresh JWT
   - **Body**:
     ```json
     {
