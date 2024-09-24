@@ -1,8 +1,9 @@
+from .models import Item
+from .serializers import ItemSerializer, RegisterSerializer
+
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .models import Item
-from .serializers import ItemSerializer, RegisterSerializer
 
 
 class RegisterView(APIView):
@@ -56,6 +57,6 @@ class ItemView(APIView):
         try:
             item = Item.objects.get(id=item_id)
             item.delete()
-            return Response({'message': 'Item deleted!'}, status=status.HTTP_204_NO_CONTENT)
+            return Response({"message": "Item deleted!"}, status=status.HTTP_204_NO_CONTENT)
         except Item.DoesNotExist:
             return Response({"error": "Item not found!"}, status=status.HTTP_404_NOT_FOUND)
