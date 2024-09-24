@@ -126,8 +126,12 @@ The system uses Redis to cache frequently accessed inventory items, optimizing p
     
     ```json
     {
+      "username": "username",
       "email": "user@example.com",
-      "password": "yourpassword"
+      "password": "yourpassword",
+      "password2": "yourpassword",
+      "first_name": "firstname",  # optional
+      "last_name": "lastname"  # optional
     }
     ```
     
