@@ -123,6 +123,7 @@ The system uses Redis to cache frequently accessed inventory items, optimizing p
 - **POST** /auth/register/
   - Register User
   - **Body**:
+    
     ```json
     {
       "email": "user@example.com",
@@ -133,16 +134,18 @@ The system uses Redis to cache frequently accessed inventory items, optimizing p
 - **POST** /auth/login/
   - Generate JWT
   - **Body**:
-  ```json
-    {
-      "email": "user@example.com",
-      "password": "yourpassword"
-    }
-  ```
+    
+    ```json
+      {
+        "email": "user@example.com",
+        "password": "yourpassword"
+      }
+    ```
   
 - **POST** /auth/token/refresh/
   - Refresh JWT
   - **Body**:
+    
     ```json
     {
       "refresh": "your-refresh-token"
@@ -159,6 +162,7 @@ The system uses Redis to cache frequently accessed inventory items, optimizing p
 - **POST** /items/
   - Create a new item.
   - **Body**:
+    
     ```json
     {
       "name": "Item Name",
