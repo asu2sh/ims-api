@@ -108,7 +108,7 @@ This is a Backend API for a simple Inventory Management System, built using Djan
 ## Deployment
 The application has been successfully deployed to production on Render. 
 - **Production URL**: [Production URL](https://ims-api-gddw.onrender.com/)
-- You can use the same API endpoints listed below to interact with the deployed application.
+- You can use the same API endpoints listed below to interact with the deployed application using Postman.
 
 ## API Endpoints
 
