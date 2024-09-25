@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY', default='django-insecure-hip%h@v+s*f0bhy+mgypx
 # Deubg Mode
 DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = ['ims-api-gddw.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'ims-api-gddw.onrender.com']
 
 
 # Application definition
