@@ -8,6 +8,7 @@ This is a Backend API for a simple Inventory Management System, built using Djan
 - [Installation](#installation)
   - [Prerequisites](#prerequisites)
   - [Steps](#steps)
+- [Deployment](#deployment)
 - [API Endpoints](#api-endpoints)
   - [Authentication](#authentication)
   - [Items](#items)
@@ -104,17 +105,10 @@ This is a Backend API for a simple Inventory Management System, built using Djan
 10. **Access the Browsable API**: 
   Visit `http://localhost:8000/api/` in your browser to access the list of browsable API endpoints.
 
-## Logging
-The system uses Python's logging module to track errors, API usage, and performance metrics.
-
-- **Log Levels**: Logs can be configured to output at different levels (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
-- **File Logging**: Logs can be written to a file by modifying the `LOGGING` configuration in Django's `settings.py`.
-
-## Caching with Redis
-The system uses Redis to cache frequently accessed inventory items, optimizing performance by reducing the number of database queries. 
-
-- **Cache Settings**: Items retrieved via `GET /items/<item_id>/` are cached for 300 seconds by default.
-- **Invalidation**: The cache is automatically invalidated when items are created, updated, or deleted.
+## Deployment
+The application has been successfully deployed to production on Render. 
+- **Production URL**: [Production URL](https://ims-api-gddw.onrender.com/)
+- You can use the same API endpoints listed below to interact with the deployed application.
 
 ## API Endpoints
 
@@ -178,6 +172,18 @@ The system uses Redis to cache frequently accessed inventory items, optimizing p
 
 - **DELETE** /items/<item_id>/
   - Delete an item by ID.
+ 
+## Logging
+The system uses Python's logging module to track errors, API usage, and performance metrics.
+
+- **Log Levels**: Logs can be configured to output at different levels (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
+- **File Logging**: Logs can be written to a file by modifying the `LOGGING` configuration in Django's `settings.py`.
+
+## Caching with Redis
+The system uses Redis to cache frequently accessed inventory items, optimizing performance by reducing the number of database queries. 
+
+- **Cache Settings**: Items retrieved via `GET /items/<item_id>/` are cached for 300 seconds by default.
+- **Invalidation**: The cache is automatically invalidated when items are created, updated, or deleted.
 
 ## Getting Help
 If you encounter any issues or have questions about the API, feel free to open an issue on the [GitHub repository](https://github.com/asu2sh/ims-api/issues).
