@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Management System API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem auto;
+            max-width: 800px;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #1a73e8;
+        }
+        code {
+            background: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inventory Management System API</h1>
+    <p>This is a backend API for an inventory management system built using Django REST Framework (DRF). It supports CRUD operations, JWT authentication, Redis caching, and logging.</p>
+
+    <div class="section">
+        <h2>🔗 Quick Links</h2>
+        <ul>
+            <li><a href="/admin/">Django Admin Panel</a></li>
+            <li><a href="/api/">Browsable API</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📌 API Endpoints</h2>
+        <h3>Authentication</h3>
+        <ul>
+            <li><code>POST /auth/register/</code> – Register user</li>
+            <li><code>POST /auth/login/</code> – Generate JWT</li>
+            <li><code>POST /auth/token/refresh/</code> – Refresh JWT</li>
+        </ul>
+
+        <h3>Items</h3>
+        <ul>
+            <li><code>GET /items/</code> – List all items</li>
+            <li><code>GET /items/&lt;id&gt;/</code> – Retrieve item by ID</li>
+            <li><code>POST /items/</code> – Create item</li>
+            <li><code>PUT /items/&lt;id&gt;/</code> – Update item</li>
+            <li><code>DELETE /items/&lt;id&gt;/</code> – Delete item</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🧰 Tech Stack</h2>
+        <ul>
+            <li>Django & Django REST Framework</li>
+            <li>PostgreSQL or SQLite</li>
+            <li>Redis (Caching)</li>
+            <li>JWT Authentication</li>
+            <li>Docker (optional)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📦 Features</h2>
+        <ul>
+            <li>JWT-secured API</li>
+            <li>CRUD operations on inventory items</li>
+            <li>Redis-based caching</li>
+            <li>Error handling and logging</li>
+            <li>Unit test coverage</li>
+        </ul>
+    </div>
+
+    <p>📘 View on GitHub: <a href="https://github.com/asu2sh/ims-api" target="_blank">asu2sh/ims-api</a></p>
+</body>
+</html>
