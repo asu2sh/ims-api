@@ -110,7 +110,9 @@ The application has been successfully deployed to production on Render.
 - **Production URL**: [Production URL](https://ims-api-gddw.onrender.com/)
 - You can use the same API endpoints listed below to interact with the deployed application using Postman.
 
-## API Endpoints
+## Django Admin (BASE_URL/admin/)
+
+## API Endpoints (BASE_URL/api/)
 
 ### Authentication
 
